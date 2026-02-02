@@ -29,3 +29,12 @@ values ('Yarik', 'Berezevski', '2025-12-12', 1),
 ('Yarik', 'Berezevsi', '2025-12-12', 1),
 ('Yarik', 'Berezev', '2025-12-12', 1);
 select * from opilane
+
+--ühe kirje kustutamine
+select * from opilane
+delete from opilane where opilaneID = 5;
+--uuendame kirje
+select * from opilane
+update opilane set aadress = 'Tallinn'
+where opilaneID = 4;
+select * from opilane
